@@ -1,0 +1,19 @@
+import express from "express";
+import cors from "cors";
+import dotenv from 'dotenv';
+dotenv.config();
+
+import AuthRoutes from './routes/auth.routes.js';
+import SportRoutes from './routes/sport.routes.js';
+
+
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+app.use('/api/auth', AuthRoutes);
+app.use('/api/sports', SportRoutes);
+
+const PORT = 5000 ;
+app.listen(PORT , () => console.log(` server runing on PORT ${PORT} : `));
