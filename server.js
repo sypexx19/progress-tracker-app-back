@@ -5,6 +5,7 @@ dotenv.config();
 
 import AuthRoutes from './routes/auth.routes.js';
 import SportRoutes from './routes/sport.routes.js';
+import WorkoutRoutes from './routes/workout.routes.js';
 
 
 
@@ -14,6 +15,7 @@ app.use(express.json());
 
 app.use('/api/auth', AuthRoutes);
 app.use('/api/sports', SportRoutes);
+app.use('/api/workouts', WorkoutRoutes);
 
-const PORT = 5000 ;
-app.listen(PORT , () => console.log(` server runing on PORT ${PORT} : `));
+const PORT = 5000;
+app.listen(PORT, () => console.log(` server runing on PORT ${PORT} : `));
