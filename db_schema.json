@@ -1,0 +1,284 @@
+{
+  "all_exercises": [
+    {
+      "Field": "id",
+      "Type": "int"
+    },
+    {
+      "Field": "e_name",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "e_type",
+      "Type": "int"
+    }
+  ],
+  "default_exercieses": [
+    {
+      "Field": "id",
+      "Type": "int"
+    },
+    {
+      "Field": "day_id",
+      "Type": "int"
+    },
+    {
+      "Field": "ex_name",
+      "Type": "varchar(100)"
+    },
+    {
+      "Field": "sets",
+      "Type": "int"
+    },
+    {
+      "Field": "reps",
+      "Type": "int"
+    },
+    {
+      "Field": "rest_time_seconds",
+      "Type": "int"
+    },
+    {
+      "Field": "is_deleted",
+      "Type": "tinyint(1)"
+    }
+  ],
+  "default_workouts_days": [
+    {
+      "Field": "id",
+      "Type": "int"
+    },
+    {
+      "Field": "day_name",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "workout_id",
+      "Type": "int"
+    },
+    {
+      "Field": "created_at",
+      "Type": "timestamp"
+    },
+    {
+      "Field": "is_deleted",
+      "Type": "tinyint(1)"
+    }
+  ],
+  "e_types": [
+    {
+      "Field": "id",
+      "Type": "int"
+    },
+    {
+      "Field": "t_name",
+      "Type": "varchar(50)"
+    }
+  ],
+  "exercice_logs": [
+    {
+      "Field": "id",
+      "Type": "int"
+    },
+    {
+      "Field": "session_id",
+      "Type": "int"
+    },
+    {
+      "Field": "exercise_id",
+      "Type": "int"
+    },
+    {
+      "Field": "sets_completed",
+      "Type": "int"
+    },
+    {
+      "Field": "reps_completed",
+      "Type": "int"
+    },
+    {
+      "Field": "weight_kg",
+      "Type": "decimal(6,0)"
+    },
+    {
+      "Field": "created_at",
+      "Type": "timestamp"
+    },
+    {
+      "Field": "is_deleted",
+      "Type": "tinyint(1)"
+    }
+  ],
+  "exercises": [
+    {
+      "Field": "id",
+      "Type": "int"
+    },
+    {
+      "Field": "day_id",
+      "Type": "int"
+    },
+    {
+      "Field": "ex_name",
+      "Type": "varchar(100)"
+    },
+    {
+      "Field": "sets",
+      "Type": "int"
+    },
+    {
+      "Field": "reps",
+      "Type": "int"
+    },
+    {
+      "Field": "rest_time_seconds",
+      "Type": "int"
+    },
+    {
+      "Field": "is_deleted",
+      "Type": "tinyint(1)"
+    }
+  ],
+  "sports": [
+    {
+      "Field": "sport_id",
+      "Type": "int"
+    },
+    {
+      "Field": "sport_name",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "user_id",
+      "Type": "int"
+    },
+    {
+      "Field": "created_at",
+      "Type": "timestamp"
+    }
+  ],
+  "sports_default": [
+    {
+      "Field": "sport_id",
+      "Type": "int"
+    },
+    {
+      "Field": "sport_name",
+      "Type": "varchar(50)"
+    }
+  ],
+  "users": [
+    {
+      "Field": "user_id",
+      "Type": "int"
+    },
+    {
+      "Field": "user_name",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "email",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "user_password",
+      "Type": "varchar(100)"
+    },
+    {
+      "Field": "created_at",
+      "Type": "timestamp"
+    },
+    {
+      "Field": "is_deleted",
+      "Type": "tinyint(1)"
+    }
+  ],
+  "workout_session": [
+    {
+      "Field": "id",
+      "Type": "int"
+    },
+    {
+      "Field": "user_id",
+      "Type": "int"
+    },
+    {
+      "Field": "workout_id",
+      "Type": "int"
+    },
+    {
+      "Field": "started_at",
+      "Type": "timestamp"
+    },
+    {
+      "Field": "is_deleted",
+      "Type": "tinyint(1)"
+    }
+  ],
+  "workouts": [
+    {
+      "Field": "workout_id",
+      "Type": "int"
+    },
+    {
+      "Field": "sport_id",
+      "Type": "int"
+    },
+    {
+      "Field": "workout_name",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "created_at",
+      "Type": "timestamp"
+    },
+    {
+      "Field": "is_deleted",
+      "Type": "tinyint(1)"
+    },
+    {
+      "Field": "workout_description",
+      "Type": "varchar(500)"
+    },
+    {
+      "Field": "default_workout_id",
+      "Type": "int"
+    }
+  ],
+  "workouts_days": [
+    {
+      "Field": "day_id",
+      "Type": "int"
+    },
+    {
+      "Field": "workout_id",
+      "Type": "int"
+    },
+    {
+      "Field": "day_name",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "created_at",
+      "Type": "timestamp"
+    },
+    {
+      "Field": "is_deleted",
+      "Type": "tinyint(1)"
+    }
+  ],
+  "workouts_defaults": [
+    {
+      "Field": "workout_id",
+      "Type": "int"
+    },
+    {
+      "Field": "workout_name",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "sport_id",
+      "Type": "int"
+    }
+  ]
+}
