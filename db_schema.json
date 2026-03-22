@@ -81,7 +81,7 @@
       "Type": "int"
     },
     {
-      "Field": "session_id",
+      "Field": "day_id",
       "Type": "int"
     },
     {
@@ -131,12 +131,16 @@
       "Type": "int"
     },
     {
-      "Field": "rest_time_seconds",
+      "Field": "rest",
       "Type": "int"
     },
     {
       "Field": "is_deleted",
       "Type": "tinyint(1)"
+    },
+    {
+      "Field": "weight",
+      "Type": "decimal(6,0)"
     }
   ],
   "sports": [
@@ -213,6 +217,36 @@
     {
       "Field": "is_deleted",
       "Type": "tinyint(1)"
+    },
+    {
+      "Field": "end_at",
+      "Type": "timestamp"
+    },
+    {
+      "Field": "statue",
+      "Type": "enum('progress','complete')"
+    },
+    {
+      "Field": "workout_name",
+      "Type": "varchar(50)"
+    }
+  ],
+  "workout_session_days": [
+    {
+      "Field": "id",
+      "Type": "int"
+    },
+    {
+      "Field": "day_name",
+      "Type": "varchar(50)"
+    },
+    {
+      "Field": "session_id",
+      "Type": "int"
+    },
+    {
+      "Field": "day_id",
+      "Type": "int"
     }
   ],
   "workouts": [
